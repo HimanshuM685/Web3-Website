@@ -8,6 +8,8 @@
   --lightdarkperple: #c0b8e7;
   --themeblack: #1c1d1d;
   --fadeblack: #60567c;
+  --baseshadow: rgba(143, 102, 255, 0.549);
+  --lightshadow: rgba(167, 135, 255, 0.481);
 }
 
 .darkmode{
@@ -50,7 +52,7 @@ body{
 }
 .button:hover {
     background-color: var(--lightperple);
-    box-shadow: 2px 2px 50px rgba(143, 102, 255, 0.549);
+    box-shadow: 2px 2px 50px var(--baseshadow);
   }
 .button:active {
     background-color: var(--lightdarkperple);
@@ -76,7 +78,7 @@ body{
 }
 .buttonalt:hover{
   background-color: var(--baseperple);
-  box-shadow: 2px 2px 50px rgba(143, 102, 255, 0.549);
+  box-shadow: 2px 2px 50px var(--baseshadow);
 }
 .buttonalt:active{
   border: 5px solid var(--lightdarkperple);
@@ -104,7 +106,7 @@ body{
 .altbutton:hover{
   background-color: var(--lightperple);
   border: 5px solid var(--baseperple);  
-  box-shadow: 2px 2px 50px rgba(143, 102, 255, 0.549);       
+  box-shadow: 2px 2px 50px var(--baseshadow);       
 }
 
 .altbutton:active{
@@ -139,7 +141,7 @@ body{
 
 .hero{
   font-size: 128px;
-  text-shadow: 2px 2px 50px rgba(167, 135, 255, 0.481);
+  text-shadow: 2px 2px 50px var(--lightshadow);
   animation: slideUp 0.6s ease-in-out;
 }
 
@@ -243,7 +245,7 @@ body{
   animation-delay: 0.1s;
   padding: 20px;
   text-align: center;
-  box-shadow: 2px 2px 50px rgba(167, 135, 255, 0.426);
+  box-shadow: 2px 2px 50px var(--baseshadow);
 }
 
 .monono{
