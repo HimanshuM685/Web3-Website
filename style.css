@@ -1,7 +1,8 @@
 :root{
   --baseperple: #ab9ef3;
+  --saasperele: #5f45f5;
   --themeperple: #baaeff74;
-  --darkperple: #3d305b;
+  --darkperple: #3a2a62;
   --basewhite: #fcfcff;
   --lightperple: #d7cff9;
   --lightdarkperple: #c0b8e7;
@@ -144,11 +145,11 @@ body{
   animation-delay: 0.2s;
 }
 
-/* .nd{
-  height: 100vh;
+.nd{
+  height: 50vh;
   width: auto;
   background-color: var(--baseperple);
-} */
+}
 
 @keyframes slideUp {
   0% {
@@ -162,4 +163,44 @@ body{
   100% {
     transform: translateY(0);
   }
+}
+
+.thanks{
+  margin-top: 10vh;
+  font-size: 44px;
+  color: var(--darkperples);
+}
+
+.input-container {
+  display: flex;
+  align-items: center;
+}
+
+.input-field {
+  font-family: "inherit", sans-serif;
+  padding: 10px 15px;
+  font-size: 16px;
+  border: 2px solid var(--basewhite);
+  border-right: none; /* Removes the right border to join with the button */
+  border-radius: 100px 0 0 100px; /* Rounded corners on the left */
+  outline: none;
+  width: 250px;
+}
+
+.submit-btn {
+  font-family: "inherit", sans-serif;
+  font-weight: 600;
+  padding: 10px 20px;
+  font-size: 16px;
+  border: 2px solid var(--saasperele);
+  border-radius: 0 100px 100px 0; /* Rounded corners on the right */
+  background-color: var(--saasperele);
+  color: var(--basewhite);
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.submit-btn:hover {
+  background-color: var(--darkperple);
+  border: 2px solid var(--darkperple);
 }
