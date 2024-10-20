@@ -10,8 +10,14 @@
   --fadeblack: #60567c;
 }
 
-
+html {
+  scrollbar-width: none; /* Firefox */
+}
+body::-webkit-scrollbar {
+  display: none; /* Chrome, Safari, Edge */
+}
 body{
+  overflow: scroll;
   font-family: "inherit", sans-serif;
   font-optical-sizing: auto;
   font-weight: 500;
@@ -97,6 +103,7 @@ body{
 }
 
 .nav{
+  transition: opacity 2s ease-in-out;
     display: flex;
     height: 100px;
     width: auto;
