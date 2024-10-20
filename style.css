@@ -46,9 +46,11 @@ body{
       border-radius: 8px;
       border-radius: 1000px;    
       transition: background-color 0.3s ease;
+      box-shadow: none;
 }
 .button:hover {
-    background-color: var(--lightperple); /* Darker green on hover */
+    background-color: var(--lightperple);
+    box-shadow: 2px 2px 50px rgba(143, 102, 255, 0.549);
   }
 .button:active {
     background-color: var(--lightdarkperple);
@@ -70,9 +72,11 @@ body{
       border-radius: 8px;
       border-radius: 1000px;    
       transition: background-color 0.3s ease;
+      box-shadow: none;
 }
 .buttonalt:hover{
   background-color: var(--baseperple);
+  box-shadow: 2px 2px 50px rgba(143, 102, 255, 0.549);
 }
 .buttonalt:active{
   border: 5px solid var(--lightdarkperple);
@@ -94,11 +98,13 @@ body{
     border-radius: 8px;
     border-radius: 1000px;    
     transition: background-color 0.3s ease;
+    box-shadow: none;
 }
 
 .altbutton:hover{
   background-color: var(--lightperple);
-  border: 5px solid var(--baseperple);         
+  border: 5px solid var(--baseperple);  
+  box-shadow: 2px 2px 50px rgba(143, 102, 255, 0.549);       
 }
 
 .altbutton:active{
@@ -133,8 +139,7 @@ body{
 
 .hero{
   font-size: 128px;
- 
-
+  text-shadow: 2px 2px 50px rgba(167, 135, 255, 0.481);
   animation: slideUp 0.6s ease-in-out;
 }
 
@@ -238,6 +243,7 @@ body{
   animation-delay: 0.1s;
   padding: 20px;
   text-align: center;
+  box-shadow: 2px 2px 50px rgba(167, 135, 255, 0.426);
 }
 
 .monono{
