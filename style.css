@@ -13,7 +13,15 @@
 }
 
 .darkmode{
-  
+  --baseperple: #9b73ff;
+  --saasperele: #4922F4;
+  --themeperple: #070038;
+  --darkperple: #d4c3ff;
+  --basewhite: #230b42;
+  --lightperple: #362b63;
+  --lightdarkperple: #A29BC2;
+  --themeblack: #F0F7F7;
+  --fadeblack: #B7A4ED;
 }
 
 html {
@@ -127,8 +135,11 @@ body{
     justify-content: space-between;
 }
 
-.navv{
-    /* color: rgb(60, 49, 91); */
+.navvv{
+  margin-left: 15px;
+  font-size: 32px;
+  text-decoration: none;
+  color: var(--darkperple);
 }
 
 .main{
@@ -251,4 +262,21 @@ body{
 .monono{
   font-size: 24px;
   color: var(--darkperple);
+}
+
+
+#sd svg{
+  height: inherit;
+  width: auto;
+}
+
+#sd svg:last-child{
+  display: none;
+}
+
+.darkmode #sd svg:first-child{
+  display: none;
+}
+.darkmode #sd svg:last-child{
+  display: block;
 }
