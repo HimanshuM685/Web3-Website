@@ -37,13 +37,25 @@
     <div>
         <div>
             <div style="display: flex; justify-content: center; margin-bottom: 5vh;">
-                <span class="thanks">Get Your Web3 Wallet</span>
+                <span class="thankss">Get Your Web3 Wallet</span>
             </div>
             <div style="display: flex; justify-content: center;">
-                <button id="login-btn" class="button">
+                <div class="field">
+                    <span id="mnemonic-display" class="monono">Tap on Generate</span>
+                </div>
+            </div>
+            <div style="display: flex; justify-content: center; margin-bottom: 15vh; animation: slideUp 0.6s ease-in-out; animation-delay: 0.1s;">
+                <button id="generate-btn" class="altbutton" enabled>
                     <div style="display: flex; height: 32px; justify-content: center; align-items: center;">
                         <img src="public/assest/crypto-wallet-svgrepo-com.svg" alt="" style="height: inherit;">
                         <span style="height: 20px; font-size: 20px; margin: 8px">Generate Wallet</span>
+                    </div>
+                </button>
+
+                <button id="copy-btn" class="buttonalt" disabled>
+                    <div style="display: flex; height: 32px; justify-content: center; align-items: center;">
+                        <img src="public/assest/crypto-wallet-svgrepo-com.svg" alt="" style="height: inherit;">
+                        <span style="height: 20px; font-size: 20px; margin: 8px">Copy</span>
                     </div>
                 </button>
             </div>
@@ -73,6 +85,22 @@
         </div>
     </div>
 
-    <script></script>
+    <script>
+        document.getElementById('generate-btn').addEventListener('click', function() {
+            const mnemonic = bip.generateMnemonic();
+            document.getElementById('mnemonic-display').innerText = mnemonic;
+        
+            document.getElementById('copy-btn').disabled = false;
+        });
+
+        document.getElementById('copy-btn').addEventListener('click', function() {
+            const mnemonic = document.getElementById('mnemonic-display').innerText;
+            navigator.clipboard.writeText(mnemonic).then(() => {
+        alert('Mnemonic copied to clipboard!');
+      }).catch(err => {
+        console.error('Failed to copy: ', err);
+      });
+    });
+    </script>
     </body>
 </html>
