@@ -47,7 +47,7 @@ body{
 .buttonalt{
   background-color: var(--basewhite);
   border: 5px solid var(--baseperple);         
-      color: #1c1d1d;           
+      color: var(--themeblack);           
       padding: 8px 16px;   
       text-align: center;     
       text-decoration: none;   
@@ -67,6 +67,34 @@ body{
   border: 5px solid var(--lightdarkperple);
   background-color: var(--lightdarkperple);
 }
+
+.altbutton{
+  background-color: var(--baseperple); 
+  border: 5px solid var(--baseperple);            
+    color: var(--themeblack);           
+    padding: 8px 16px;   
+    text-align: center;     
+    text-decoration: none;   
+    display: inline-block;    
+    font-size: 16px;         
+    font-family: 'Montserrat', sans-serif; 
+    margin: 10px;              
+    cursor: pointer;      
+    border-radius: 8px;
+    border-radius: 1000px;    
+    transition: background-color 0.3s ease;
+}
+
+.altbutton:hover{
+  background-color: var(--lightperple);
+  border: 5px solid var(--baseperple);         
+}
+
+.altbutton:active{
+  background-color: var(--lightdarkperple);
+  border: 5px solid var(--lightdarkperple);
+}
+
 .nav{
     display: flex;
     height: 100px;
@@ -115,10 +143,11 @@ body{
   animation: slideUp 0.6s ease-in-out;
   animation-delay: 0.2s;
 }
+
 /* .nd{
   height: 100vh;
   width: auto;
-  background-color: #3d305b;
+  background-color: var(--baseperple);
 } */
 
 @keyframes slideUp {
@@ -132,6 +161,5 @@ body{
   }
   100% {
     transform: translateY(0);
-    
   }
 }
