@@ -305,10 +305,22 @@ body{
   .btntext{
     font-size: 16px;
   }
+
+  .thanks{
+    margin-top: 5vh;
+    font-size: 36px;
+  }
+  
+  .subthanks{
+    font-size: 12px;
+  }
+  
+  
+.inf{
+  margin-top: 5vh;
+}
 }
 
-  
-}
 
 @media (max-width: 500px) {
   .hero{
