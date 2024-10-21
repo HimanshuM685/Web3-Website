@@ -295,6 +295,20 @@ body{
   text-align: center;
 }
 
+.btntext{
+  height: 20px;
+  font-size: 20px;
+  margin: 4px;
+}
+
+@media (max-width: 400px){
+  .btntext{
+    font-size: 12px;
+  }
+}
+
+  
+}
 
 @media (max-width: 500px) {
   .hero{
