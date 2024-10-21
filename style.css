@@ -337,9 +337,3 @@ body{
   
 
 }
-
-@media (max-width: 1000px){
-  .hero{
-    font-size: 64px;
-  }
-}
