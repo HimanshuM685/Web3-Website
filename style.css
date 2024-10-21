@@ -225,6 +225,12 @@ body{
   width: 250px;
 }
 
+.inf{
+  display: flex;
+  justify-content: center;
+  margin-top: 7.5vh;
+}
+
 .submit-btn {
   font-family: "inherit", sans-serif;
   font-weight: 600;
@@ -283,24 +289,46 @@ body{
   display: block;
 }
 
+.subthanks{
+  width: 75vw;
+  font-size: 20px;
+  text-align: center;
+}
+
+
+@media (max-width: 500px) {
+  .hero{
+    font-size: 24px;
+  }
+
+  .herotc{
+    margin-left: 10px;
+  }
+
+  .thanks{
+    margin-top: 5vh;
+    font-size: 36px;
+  }
+  
+  .subthanks{
+    font-size: 12px;
+  }
+  
+  
+.inf{
+  margin-top: 5vh;
+}
+
+}
+
 @media (max-width: 600px) {
   .nav{
-    transition: opacity 2s ease-in-out;
-      display: flex;
-      height: 75px;
-      width: auto;
-      align-items: center;
-      padding-left: 2.5%;
-      padding-right: 2.5%;
-      
       margin: 0;
       justify-content: space-between;
   }
   
   .hero{
     font-size: 36px;
-    text-shadow: 2px 2px 50px var(--lightshadow);
-    animation: slideUp 0.6s ease-in-out;
   }
 
   .herotc{
@@ -308,4 +336,10 @@ body{
   }
   
 
+}
+
+@media (max-width: 1000px){
+  .hero{
+    font-size: 64px;
+  }
 }
