@@ -31,6 +31,7 @@ body::-webkit-scrollbar {
   display: none; /* Chrome, Safari, Edge */
 }
 body{
+  text-align: center;
   overflow: scroll;
   font-family: "inherit", sans-serif;
   font-optical-sizing: auto;
@@ -162,6 +163,7 @@ body{
 
 .herotc{
   color: var(--baseperple);
+  margin-left: 25px;
 }
 
 .sog{
@@ -279,4 +281,31 @@ body{
 }
 .darkmode #sd svg:last-child{
   display: block;
+}
+
+@media (max-width: 600px) {
+  .nav{
+    transition: opacity 2s ease-in-out;
+      display: flex;
+      height: 75px;
+      width: auto;
+      align-items: center;
+      padding-left: 2.5%;
+      padding-right: 2.5%;
+      
+      margin: 0;
+      justify-content: space-between;
+  }
+  
+  .hero{
+    font-size: 36px;
+    text-shadow: 2px 2px 50px var(--lightshadow);
+    animation: slideUp 0.6s ease-in-out;
+  }
+
+  .herotc{
+    color: var(--baseperple);
+  }
+  
+
 }
